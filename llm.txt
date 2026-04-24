@@ -1,0 +1,44 @@
+# Site: Seu Juca - Bar e Restaurante
+
+## URL Principal
+https://www.seujucabsb.com.br/
+
+## Descrição
+Seu Juca é um bar e restaurante com unidades em Águas Claras e Guará (Brasília-DF), oferecendo:
+- Buffet almoço e jantar
+- Pratos executivos
+- À la carte com grelhados, peixes e frutos do mar
+- Petiscos e entradas
+- Drinks especiais
+- Chopp gelado
+- Brinquedoteca familiar
+
+## Unidades
+
+### Seu Juca Águas Claras
+- Endereço: Águas Claras, Brasília-DF
+- Horário: Domingo à Domingo, 11h - 00h
+
+### Seu Juca Quiosque (Guará 1)
+- Endereço: Guará 1, Brasília-DF
+- Horário: Domingo à Domingo, 11h - 00h
+
+### Seu Juca Guará 2
+- Endereço: Guará 2, Brasília-DF
+- Horário: Segunda à Quinta 17h-00h, Sexta à Domingo 11h-00h
+
+## Cardápios (PDF)
+- Águas Claras: https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf
+- Guará 1: https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf
+- Guará 2: https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf
+
+## Pratos em Destaque
+- Grelhados: Fraldinha Angus, Prime Rib, Picanha Gaúcha, Carne de Sol
+- Petiscos: Pastéis, Burrata, Pimenta Recheada, Isca de Tilápia
+- Peixes: Camarão, Salmão Paris, Bacalhau Gomes de Sá, Moqueca Capixaba
+
+## Contato
+- Telefone: (61) 3948-1515
+
+## Palavras-chave
+bar, restaurante, Águas Claras, Guará, Brasília, Buffet, Pratos executivos, Chopp, Drinks, Petiscos, Brinquedoteca

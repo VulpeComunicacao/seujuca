@@ -3,317 +3,338 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#333333">
+        <meta name="robots" content="index, follow">
         <link rel="canonical" href="https://www.seujucabsb.com.br/">
-        <title>Seu Juca | Bar e Restaurante - Águas Claras e Guará</title>
-        <meta name="description" content="Descubra o prazer gastronômico no Seu Juca, com unidades em Águas Claras, Guará 1 e Guará 2. Desfrute de buffet, pratos executivos e à la carte, com brinquedoteca, chopp e drinks exclusivos. No Guará, experimente o melhor quiosque da cidade com clima de bar, pratos executivos e petiscos, além do chopp mais gelado.">
-        <meta name="keywords" content="Seu Juca, Restaurante Águas Claras, Buffet almoço, Pratos executivos, Pratos À la carte, Feijoada completa, Brinquedoteca familiar, Chopp gelado, Drinks especiais, Quiosque Guará, Seu Juca Guará 2, Petiscos saborosos, Melhor quiosque cidade, bar em águas claras, restaurante no guará">
-        <meta name="author" content="Bruno Rodrigues">
-        <meta name="generator" content="VSides CMS">
 
-        <!-- Boostrap and custom Style-->
+        <title>Seu Juca | Bar e Restaurante - Águas Claras e Guará</title>
+        <meta name="description" content="Descubra o prazer gastronômico no Seu Juca, com unidades em Águas Claras, Guará 1 e Guará 2. Desfrute de buffet, pratos executivos e à la carte, com brinquedoteca, chopp e drinks exclusivos.">
+        <meta name="keywords" content="Seu Juca, Restaurante Águas Claras, Buffet almoço, Pratos executivos, Pratos À la carte, Feijoada completa, Brinquedoteca familiar, Chopp gelado, Drinks especiais, Quiosque Guará, Seu Juca Guará 2, Petiscos saborosos, Melhor quiosque cidade, bar em águas claras, restaurante no guará">
+
+        <!-- OpenGraph -->
+        <meta property="og:type" content="restaurant.restaurant">
+        <meta property="og:url" content="https://www.seujucabsb.com.br/">
+        <meta property="og:title" content="Seu Juca | Bar e Restaurante - Águas Claras e Guará">
+        <meta property="og:description" content="Descubra o prazer gastronômico no Seu Juca. Buffet, pratos executivos, à la carte, chopp e drinks exclusivos em Águas Claras e Guará.">
+        <meta property="og:image" content="https://www.seujucabsb.com.br/assets/img/og-image-social.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:site_name" content="Seu Juca">
+        <meta property="og:locale" content="pt_BR">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Seu Juca | Bar e Restaurante">
+        <meta name="twitter:description" content="Descubra o prazer gastronômico no Seu Juca. Buffet, pratos executivos, à la carte, chopp e drinks exclusivos.">
+        <meta name="twitter:image" content="https://www.seujucabsb.com.br/assets/img/og-image-social.jpg">
+
+        <!-- Structured Data - Restaurant -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "Seu Juca",
+            "description": "Bar e Restaurante com buffet, pratos executivos e à la carte",
+            "image": "https://www.seujucabsb.com.br/assets/img/logo-seujuca.png",
+            "priceRange": "$$",
+            "servesCuisine": ["Brasileira"],
+            "areaServed": {
+                "@type": "Place",
+                "name": "Águas Claras, Guará - Brasília"
+            },
+            "hasMenu": "https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf",
+            "acceptsReservations": "True",
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Cardápio",
+                "itemListElement": [
+                    {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Águas Claras"}, "name": "https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf"},
+                    {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Guará 1 - Quiosque"}, "name": "https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf"},
+                    {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Guará 2"}, "name": "https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf"}
+                ]
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Brasília",
+                "addressRegion": "DF",
+                "addressCountry": "BR"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "11:00",
+                    "closes": "00:00"
+                }
+            ],
+            "telephone": "+556139481515"
+        }
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQTRQMWG');</script>
+
+        <!-- Preload críticos -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="./assets/css/bootstrap-reboot.min.css" as="style">
+
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="./assets/css/bootstrap-reboot.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQTRQMWG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ELT07RJG8"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2ELT07RJG8');
+        </script>
+
         <header class="seujuca-ui seujuca-ui-header seujuca-ui-offcanvas position-fixed w100">
             <div class="main-nav">
                 <nav class="navbar navbar-expand-lg nav-bg py-4 py-lg-0">
                     <div class="container">
                         <div class="logo-wrapper">
-                            <a href="./index.html">
-                                <img src="./assets/img/logo-seujuca.webp" alt="Logo Seu Juca - Bar e Restaurante" class="logo">
+                            <a href="./index2.html">
+                                <img src="./assets/img/logo-seujuca.webp" alt="Logo Seu Juca - Bar e Restaurante" class="logo" width="150" height="auto">
                             </a>
-                        </div> <!--.logo-wrapper-->
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-mobile" aria-controls="offcanvas-mobile">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
                             <ul class="navbar-nav">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home-slider">Início</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                Cardápio
-                                </a>
-                                <ul class="dropdown-menu rounded-3 py-2">
-                                    <li><a class="dropdown-item my-1" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf">Águas Claras</a></li>
-                                    <li><a class="dropdown-item my-1" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf">Guará 1</a></li>
-                                    <li><a class="dropdown-item my-1" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf">Guará 2</a></li>
-                                </ul>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#happy-hour">Happy Hour</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#comochegar-horario">Como chegar</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#comochegar-horario">Horário de funcionamento</a>
-                              </li>
-                            </ul> 
-                          </div><!--.navbar-collapse-->
-                          <ul class="nav-controls d-flex align-items-center ms-auto">
-                              <li class="list-inline-item ms-xl-3 m-0">
-                                  <a class="d-block d-lg-none offcanvas-toggle" data-bs-toggle="offcanvas" href="#offcanvas-mobile" role="button" aria-controls="offcanvas-mobile">
-                                      <span class="icon-wrapper d-flex align-items-center justify-content-center position-relative rounded-pill overflow-hidden">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                                              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                            </svg>
-                                      </span>
-                                  </a><!--.para-mobile-->
-                              </li>
-                          </ul>
-                        </div><!--.container-->
-                      </nav><!--.navbar-->
-                  </div><!--.main-nav-->
-                  <div class="offcanvas offcanvas-mobile offcanvas-end d-block d-lg-none bg-dark p-3" tabindex="-1" id="offcanvas-mobile" aria-labelledby="offcanvasLabel">
-                      <div class="offcanvas-header justify-content-between px-4 py-0 mt-4 mb-5">
-                        <div class="logo-wrapper">
-                          <img src="./assets/img/logo-seujuca.webp" alt="">
-                        </div>
-                          <button type="button" class="btn-close btn-close-white rounded-pill shadow-none p-3 pe-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div><!--.offcanvas-header-->
-                      <div class="offcanvas-body p-0 pb-4">
-                          <ul class="offcanvas-listing list-unstyled">
-                              <li class="menuItens">
-                                  <a class="nav-link btnmenu1 p-3 px-4" href="#home-slider">
-                                      Início
-                                  </a>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#home-slider">Início</a>
                                 </li>
-                              <li class="menuItens">
-                                  <a class="nav-link d-flex align-items-center justify-content-between collapsed p-3 px-4" href="#cardapio" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cardapio">
-                                      Cardápio
-                                      <span>
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                          </svg>
-                                      </span>
-                                  </a>
-                                  <ul class="collapse list-unstyled" id="cardapio" data-bs-parent="#offcanvas">
-                                      <li>
-                                          <a class="nav-link ps-5 py-3" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf">Águas Claras</a>
-                                      </li>
-                                      <li>
-                                          <a class="nav-link ps-5 py-3" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf">Guará 1 - Quiosque</a>
-                                      </li>
-                                      <li>
-                                        <a class="nav-link ps-5 py-3" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf">Guará 2</a>
-                                    </li>
-                                  </ul>
-                              </li>
-                              <li class="menuItens">
-                                <a class="nav-link btnmenu2 p-3 px-4" href="#happy-hour">
-                                    Happy Hour
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cardápio</a>
+                                    <ul class="dropdown-menu rounded-3 py-2">
+                                        <li><a class="dropdown-item my-1" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf">Águas Claras</a></li>
+                                        <li><a class="dropdown-item my-1" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf">Guará 1</a></li>
+                                        <li><a class="dropdown-item my-1" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf">Guará 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#happy-hour">Happy Hour</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#como-chegar">Como Chegar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#horarios">Horário</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-controls d-flex align-items-center ms-auto">
+                            <li class="list-inline-item ms-xl-3 m-0">
+                                <a class="d-block d-lg-none offcanvas-toggle" data-bs-toggle="offcanvas" href="#offcanvas-mobile" role="button" aria-controls="offcanvas-mobile">
+                                    <span class="icon-wrapper d-flex align-items-center justify-content-center position-relative rounded-pill overflow-hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                        </svg>
+                                    </span>
                                 </a>
                             </li>
-                              <li class="menuItens">
-                                  <a class="nav-link btnmenu3 p-3 px-4" href="#comochegar-horario">
-                                      Como chegar
-                                  </a>
-                              </li>
-                              <li class="menuItens">
-                                <a class="nav-link btnmenu4 p-3 px-4" href="#comochegar-horario">
-                                    Horário de funcionamento
-                                </a>
-                            </li>
-                          </ul><!--.offcanvas-listing-->
-                        </div><!--.offcanvas-mobile-->
-                    </header>
-                    <!--=============== End Header Section  ===============-->
+                        </ul>
                     </div>
                 </nav>
             </div>
+            <div class="offcanvas offcanvas-mobile offcanvas-end d-block d-lg-none bg-dark p-3" tabindex="-1" id="offcanvas-mobile" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header justify-content-between px-4 py-0 mt-4 mb-5">
+                    <div class="logo-wrapper">
+                        <img src="./assets/img/logo-seujuca.webp" alt="Seu Juca">
+                    </div>
+                    <button type="button" class="btn-close btn-close-white rounded-pill shadow-none p-3 pe-0" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                </div>
+                <div class="offcanvas-body p-0 pb-4">
+                    <ul class="offcanvas-listing list-unstyled">
+                        <li class="menuItens">
+                            <a class="nav-link btnmenu1 p-3 px-4" href="#home-slider">Início</a>
+                        </li>
+                        <li class="menuItens">
+                            <a class="nav-link d-flex align-items-center justify-content-between collapsed p-3 px-4" href="#cardapio" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cardapio">
+                                Cardápio
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="collapse list-unstyled" id="cardapio">
+                                <li><a class="nav-link ps-5 py-3" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf">Águas Claras</a></li>
+                                <li><a class="nav-link ps-5 py-3" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf">Guará 1 - Quiosque</a></li>
+                                <li><a class="nav-link ps-5 py-3" target="_blank" rel="noopener noreferrer" href="https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf">Guará 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuItens">
+                            <a class="nav-link btnmenu2 p-3 px-4" href="#happy-hour">Happy Hour</a>
+                        </li>
+                        <li class="menuItens">
+                            <a class="nav-link btnmenu3 p-3 px-4" href="#como-chegar">Como Chegar</a>
+                        </li>
+                        <li class="menuItens">
+                            <a class="nav-link btnmenu4 p-3 px-4" href="#horarios">Horário</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
-    
+
         <main>
-
-            <div id="home-slider" class="carousel slide" data-bs-ride="carousel">
+            <section id="home-slider" class="carousel slide" data-bs-ride="carousel" aria-label="Carrossel de imagens">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="carousel-mask"></div>
-                    <img src="./assets/img/slider-5.webp" alt="Picanha na Chapa do Seu Juca">
-                    <div class="container">
-                      <div class="carousel-caption text-end">
-                        <h3>Grelhados à La carte</h3>
-                        <p>Fraldinha Angus | Prime Rib | Picanha Gaúcha | Carne de Sol</p>
-                      </div>
-                    </div>
-                  </div><!--.carousel-item-->
-                  <div class="carousel-item">
-                    <div class="carousel-mask"></div>
-                    <img src="./assets/img/slider-6.webp" alt="Pastel de formiga do Seu Juca">
-            
-                    <div class="container">
-                      <div class="carousel-caption text-end">
-                        <h3>Petiscos e entradas</h3>
-                        <p>Pastéis | Burrata | Pimenta Recheada | Isca de Tilápia</p>
-                      </div>
-                    </div>
-                  </div><!--.carousel-item-->
-                  <div class="carousel-item">
-                    <div class="carousel-mask"></div>
-                    <img src="./assets/img/slider-3.png" alt="Arroz com camarão do Seu Juca">
-                    <div class="container">
-                      <div class="carousel-caption text-end">
-                        <h3>Peixes e frutos do mar</h3>
-                        <p>Camarão | Salmão Paris | Bacalhau Gomes de Sá | Moqueca Capixaba</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!--.carousel-item-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#home-slider" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#home-slider" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Próximo</span>
-                </button>
-              </div><!--.carousel-home-->
-               <!--=============== End Carousel Section  ===============-->
-
-
-            <div class="cardapio container py-5">
-              <div class="row align-items-md-stretch">
-                <div id="cardapio" class=" title-cardapio text-center mb-5">
-                    <h2>Confira o nosso cardápio</h2>
-                    <p>Escolha uma unidade do <b>Seu Juca</b> e clique para ver o cardápio</p>
-                </div>
-                <div class="col-md-4 my-2">
-                  <div class="cardapio-aguas-claras text-center h-100 p-5 border rounded-3">
-                    <a href="https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/img/cardapio-icone.webp" width="158px" height="158px" alt="" class="cardapio-icon">
-                        <h2>Seu Juca Águas Claras</h2>
-                    <span>Ver o cardápio</span></a>
-                  </div>
-                </div>
-                <div class="col-md-4 my-2">
-                  <div class="cardapio-quiosque text-center h-100 p-5 border rounded-3">
-                    <a href="https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/img/cardapio-icone.webp" width="158px" height="158px" alt="" class="cardapio-icon">
-                        <h2>Seu Juca Guará 1</h2>
-                    <span>Ver o cardápio</span></a>
-                  </div>
-                </div>
-                <div class="col-md-4 my-2">
-                  <div class="cardapio-quiosque text-center h-100 p-5 border rounded-3">
-                    <a href="https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/img/cardapio-icone.webp" width="158px" height="158px" alt="" class="cardapio-icon">
-                        <h2>Seu Juca Guará 2</h2>
-                    <span>Ver o cardápio</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main>
-
-          <section class="banners">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="m-0 p-0 col-sm-6 col-md-3">
-                        <img class="img-fluid" src="./assets/img/mini-banner-1.png" alt="">
-                    </div>
-                    <div class="m-0 p-0 col-sm-6 col-md-3">
-                        <img class="img-fluid" src="./assets/img/mini-banner-2.png" alt="">
-                    </div>
-                    <div class="m-0 p-0 col-sm-6 col-md-3">
-                        <img class="img-fluid" src="./assets/img/mini-banner-3.png" alt="">
-                    </div>
-                    <div class="m-0 p-0 col-sm-6 col-md-3">
-                        <img class="img-fluid" src="./assets/img/mini-banner-4.png" alt="">
-                    </div>
-                </div>
-            </div>
-          </section>
-
-          <section id="comochegar-horario" class="my-4 py-3 horarios">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 text-center">
-                        <h2>Veja como chegar no Seu Juca</h2>
-                        <div class="row">
-                            <a href="https://maps.app.goo.gl/xSZJzAoJ1dsTNSiY7" target="_blank" rel="noopener noreferrer">
-                                <div class="mt-4 aguas-claras col-sm-12 col-md-3">
-                                    <h3>Seu Juca<br>Águas Claras</h3>
-                                    <img class="mt-4" src="./assets/img/icone-mapa.png" alt="">
-                                </div>
-                            </a>
-                            <a href="https://maps.app.goo.gl/rPAjeUW3p9F2b8M4A" target="_blank" rel="noopener noreferrer">   
-                            <div class="mt-4 quiosque col-md-3 "> 
-                                <h3>Seu Juca Quiosque<br>Guará 1</h3>
-                                <img src="./assets/img/icone-mapa.png" alt="">
+                    <div class="carousel-item active">
+                        <div class="carousel-mask"></div>
+                        <img src="./assets/img/slider-5.webp" alt="Picanha na Chapa do Seu Juca" class="d-block w-100" loading="eager">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h2>Grelhados à La Carte</h2>
+                                <p>Fraldinha Angus | Prime Rib | Picanha Gaúcha | Carne de Sol</p>
                             </div>
-                            </a>
-                            <a href="https://maps.app.goo.gl/XiZTnrqsTbnzQQN29" target="_blank" rel="noopener noreferrer">   
-                              <div class="mt-4 guara2 col-md-3 "> 
-                                  <h3>Seu Juca<br>Guará 2</h3>
-                                  <img src="./assets/img/icone-mapa.png" alt="">
-                              </div>
-                              </a>  
                         </div>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <h2>Horário de funcionamento</h2>
-                                <h4>Águas Claras e Quiosque </h4>
-                                <p>Domingo à Domingo <br> <span>11h - 00h</span></p>
-                                <br>
-                                <h4>Seu Juca - Guará 2 </h4>
-                                <p>Segunda à Quinta <br> <span>17h - 00h</span></p>
-                                <p>Sexta à Domingo <br> <span>11h - 00h</span></p>
+                    <div class="carousel-item">
+                        <div class="carousel-mask"></div>
+                        <img src="./assets/img/slider-6.webp" alt="Pastel de formiga do Seu Juca" class="d-block w-100" loading="lazy">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h2>Petiscos e Entradas</h2>
+                                <p>Pastéis | Burrata | Pimenta Recheada | Isca de Tilápia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-mask"></div>
+                        <img src="./assets/img/slider-3.webp" alt="Arroz com camarão do Seu Juca" class="d-block w-100" loading="lazy">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h2>Peixes e Frutos do Mar</h2>
+                                <p>Camarão | Salmão Paris | Bacalhau Gomes de Sá | Moqueca Capixaba</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-          </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#home-slider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#home-slider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </section>
 
-          <section id="happy-hour" class="happy-hour">
-            <div>
-                <img class="d-none d-md-block img-fluid" src="./assets/img/banner-happy-hour.webp" alt="Confira o happyhour do Seu Juca">
-                <img class="d-block d-md-none img-fluid" src="./assets/img/banner-happy-hour-mobile.webp" alt="Confira o happyhour do Seu Juca">
-            </div>
-          </section>
+            <section id="cardapio" class="cardapio container py-5" aria-labelledby="title-cardapio">
+                <div class="row align-items-md-stretch">
+                    <div class="title-cardapio text-center mb-5">
+                        <h1 id="title-cardapio">Cardápio do Seu Juca</h1>
+                        <p>Escolha uma unidade e clique para ver o cardápio</p>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="cardapio-aguas-claras text-center h-100 p-5 border rounded-3">
+                            <a href="https://www.seujucabsb.com.br/_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee.pdf" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/cardapio-icone.webp" width="158" height="158" alt="" class="cardapio-icon" loading="lazy">
+                                <h3>Seu Juca Águas Claras</h3>
+                                <span>Ver o cardápio</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="cardapio-quiosque text-center h-100 p-5 border rounded-3">
+                            <a href="https://www.seujucabsb.com.br/_files/ugd/74a360_667e87410bba43ada073e24044858076.pdf" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/cardapio-icone.webp" width="158" height="158" alt="" class="cardapio-icon" loading="lazy">
+                                <h3>Seu Juca Guará 1</h3>
+                                <span>Ver o cardápio</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="cardapio-quiosque text-center h-100 p-5 border rounded-3">
+                            <a href="https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/cardapio-icone.webp" width="158" height="158" alt="" class="cardapio-icon" loading="lazy">
+                                <h3>Seu Juca Guará 2</h3>
+                                <span>Ver o cardápio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-          
+            <section class="banners" aria-label="Banners informativas">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="m-0 p-0 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="./assets/img/mini-banner-1.webp" alt="Ambiente familiar" loading="lazy">
+                        </div>
+                        <div class="m-0 p-0 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="./assets/img/mini-banner-2.webp" alt="Buffet variado" loading="lazy">
+                        </div>
+                        <div class="m-0 p-0 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="./assets/img/mini-banner-3.webp" alt="Drinks especiais" loading="lazy">
+                        </div>
+                        <div class="m-0 p-0 col-sm-6 col-md-3">
+                            <img class="img-fluid" src="./assets/img/mini-banner-4.webp" alt="Chopp gelado" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-          <footer class="pt-3 mt-4 text-center border-top">
-            Seu Juca | Bar e Restaurante - &copy; - Todos os Direitos Reservados 2025
-          </footer>
+            <section id="como-chegar" class="my-4 py-3 horarios" aria-labelledby="titulo-como-chegar">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 text-center">
+                            <h2 id="titulo-como-chegar">Como Chegar</h2>
+                            <div class="row justify-content-center">
+                                <a href="https://maps.app.goo.gl/xSZJzAoJ1dsTNSiY7" target="_blank" rel="noopener noreferrer" class="col-sm-6 col-md-3">
+                                    <div class="mt-4 aguas-claras">
+                                        <h3>Seu Juca<br>Águas Claras</h3>
+                                        <img src="./assets/img/icone-mapa.webp" alt="Ícone mapa" width="80" height="auto" loading="lazy">
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/rPAjeUW3p9F2b8M4A" target="_blank" rel="noopener noreferrer" class="col-sm-6 col-md-3">
+                                    <div class="mt-4 quiosque">
+                                        <h3>Seu Juca<br>Guará 1</h3>
+                                        <img src="./assets/img/icone-mapa.webp" alt="Ícone mapa" width="80" height="auto" loading="lazy">
+                                    </div>
+                                </a>
+                                <a href="https://maps.app.goo.gl/XiZTnrqsTbnzQQN29" target="_blank" rel="noopener noreferrer" class="col-sm-6 col-md-3">
+                                    <div class="mt-4 guara2">
+                                        <h3>Seu Juca<br>Guará 2</h3>
+                                        <img src="./assets/img/icone-mapa.webp" alt="Ícone mapa" width="80" height="auto" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="horarios" class="col-md-4 text-center">
+                            <h2>Horário de Funcionamento</h2>
+                            <h4>Águas Claras e Guará 1</h4>
+                            <p>Domingo à Domingo<br><span>11h - 00h</span></p>
+                            <h4>Seu Juca - Guará 2</h4>
+                            <p>Segunda à Quinta<br><span>17h - 00h</span></p>
+                            <p>Sexta à Domingo<br><span>11h - 00h</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section id="happy-hour" class="happy-hour" aria-label="Happy Hour do Seu Juca">
+                <div>
+                    <img class="d-none d-md-block img-fluid" src="./assets/img/banner-happy-hour.webp" alt="Happy Hour do Seu Juca" loading="lazy">
+                    <img class="d-block d-md-none img-fluid" src="./assets/img/banner-happy-hour-mobile.webp" alt="Happy Hour do Seu Juca" loading="lazy">
+                </div>
+            </section>
+        </main>
 
-
-  <script>
-  const $menu = document.querySelector('.offcanvas-mobile');
-  const $menu2 = document.querySelector('.offcanvas-backdrop');
-
-  const $menuItems = document.querySelectorAll('.offcanvas-listing a'); // Todos os links do menu
-
-  function hideOffcanvas(event) {
-      // Verifica se o link é para um PDF ou link externo
-      const target = event.target.closest('a');
-      if (target && (target.href.includes('.pdf') || target.target === '_blank')) {
-          return; // Não fecha o menu para links de PDF ou externos
-      }
-      
-      $menu.classList.remove('show');
-      $menu2.classList.remove('show');
-      document.body.style.overflow = 'auto';
-  }
-
-  // Adiciona o ouvinte de eventos a todos os links do menu
-  // $menuItems.forEach(function (menuItem) {
-  //    menuItem.addEventListener('click', hideOffcanvas);
-  // });
-
-  // Adiciona o ouvinte de eventos ao botão de fechar
-  document.querySelector('.btn-close').addEventListener('click', hideOffcanvas);
-
-
-  </script> 
-
-
-
+        <footer class="pt-3 mt-4 text-center border-top">
+            <p>Seu Juca | Bar e Restaurante &copy; Todos os Direitos Reservados 2026</p>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     </body>
 </html>
