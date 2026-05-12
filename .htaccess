@@ -1,1 +1,11 @@
 ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+RewriteRule ^cardapio/aguasclaras$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [L]
+RewriteRule ^cardapio/guara1$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [L]
+RewriteRule ^cardapio/guara2$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [L]
+
+RewriteRule ^aguasclaras$ https://seujucabsb.com.br/aguas-claras [L,R=302]
+RewriteRule ^guara1$ https://seujucabsb.com.br/guara1 [L,R=302]
+RewriteRule ^guara2$ https://www.seujucabsb.com.br/guara2/cardapio-seu-juca-guara2.pdf [L,R=302]
