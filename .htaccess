@@ -2,15 +2,19 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 
-RewriteRule ^cardapio/aguasclaras(/)?$ /cardapios/aguasclaras/ [L,R=302]
-RewriteRule ^cardapio/guara1(/)?$ /cardapios/guara1/ [L,R=302]
-RewriteRule ^cardapio/guara2(/)?$ /cardapios/guara2/ [L,R=302]
+RewriteRule ^cardapio/aguasclaras(/)?$ /cardapio-em-atualizacao.html [L,R=302]
+RewriteRule ^cardapio/guara1(/)?$ /cardapio-em-atualizacao.html [L,R=302]
+RewriteRule ^cardapio/guara2(/)?$ /cardapio-em-atualizacao.html [L,R=302]
 
-RewriteRule ^_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee\.pdf$ /cardapio/aguasclaras/ [L,R=302]
-RewriteRule ^aguas-claras$ /cardapio/aguasclaras/ [L,R=302]
+RewriteRule ^_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
+RewriteRule ^aguas-claras$ /cardapio-em-atualizacao.html [L,R=302]
 
-RewriteRule ^_files/ugd/novo_74a360_667e87410bba43ada073e24044858076\.pdf$ /cardapio/guara1/ [L,R=302]
-RewriteRule ^guara1$ /cardapio/guara1/ [L,R=302]
+RewriteRule ^_files/ugd/novo_74a360_667e87410bba43ada073e24044858076\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
+RewriteRule ^guara1$ /cardapio-em-atualizacao.html [L,R=302]
 
-RewriteRule ^guara2/cardapio-seu-juca-guara2\.pdf$ /cardapio/guara2/ [L,R=302]
-RewriteRule ^guara2$ /cardapio/guara2/ [L,R=302]
+RewriteRule ^guara2/cardapio-seu-juca-guara2\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
+RewriteRule ^guara2$ /cardapio-em-atualizacao.html [L,R=302]
+
+RewriteRule ^cardapios/aguasclaras(/)?$ /cardapio-em-atualizacao.html [L,R=302]
+RewriteRule ^cardapios/guara1(/)?$ /cardapio-em-atualizacao.html [L,R=302]
+RewriteRule ^cardapios/guara2(/)?$ /cardapio-em-atualizacao.html [L,R=302]

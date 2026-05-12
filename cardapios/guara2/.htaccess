@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /cardapios/guara2/
-    RewriteRule ^$ cardapio-guara2-2026-1.pdf [L,R=302]
+    RewriteRule ^$ /cardapio-em-atualizacao.html [L,R=302]
 </IfModule>
 
 Options -Indexes
