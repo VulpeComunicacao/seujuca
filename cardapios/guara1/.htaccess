@@ -1,12 +1,19 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /cardapios/guara1/
+
+    # Allow direct access to PDF files
+    RewriteRule ^(.+\.pdf)$ - [L]
+
+    # Redirect empty directory access
     RewriteRule ^$ /cardapio-em-atualizacao.html [L,R=302]
 </IfModule>
 
 Options -Indexes
 
-<FilesMatch "cardapio.*\.pdf$">
+# Force no-cache on PDFs so customers always get the latest version
+<FilesMatch "\.pdf$">
+    Header set Content-Type "application/pdf"
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires "0"

@@ -2,10 +2,19 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 
-RewriteRule ^cardapio/aguasclaras(/)?$ /cardapio-em-atualizacao.html [L,R=302]
-RewriteRule ^cardapio/guara1(/)?$ /cardapio-em-atualizacao.html [L,R=302]
-RewriteRule ^cardapio/guara2(/)?$ /cardapio-em-atualizacao.html [L,R=302]
+# /cardapio/aguasclaras -> serve o PDF diretamente
+RewriteRule ^cardapio/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [L]
 
+# /cardapio/guara1 -> serve o PDF diretamente
+RewriteRule ^cardapio/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [L]
+
+# /cardapio/guara2 -> serve o PDF diretamente
+RewriteRule ^cardapio/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [L]
+
+# Allow direct access to PDF files in cardapios
+RewriteRule ^cardapios/([^/]+)/([^/]+\.pdf)$ - [L]
+
+# Old routes - redirect to update page
 RewriteRule ^_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^aguas-claras$ /cardapio-em-atualizacao.html [L,R=302]
 
@@ -15,6 +24,12 @@ RewriteRule ^guara1$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^guara2/cardapio-seu-juca-guara2\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^guara2$ /cardapio-em-atualizacao.html [L,R=302]
 
-RewriteRule ^cardapios/aguasclaras(/)?$ /cardapio-em-atualizacao.html [L,R=302]
-RewriteRule ^cardapios/guara1(/)?$ /cardapio-em-atualizacao.html [L,R=302]
-RewriteRule ^cardapios/guara2(/)?$ /cardapio-em-atualizacao.html [L,R=302]
+# Redirect cardapios folder browsing (but not PDF files)
+RewriteRule ^cardapios/([^/]+)/?$ /cardapio-em-atualizacao.html [L,R=302]
+
+# Force no-cache on all PDFs so customers always get the latest version
+<FilesMatch "\.pdf$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>

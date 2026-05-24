@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /cardapios/
-
-User-agent: *
-Allow: /
+Allow: /cardapios/
