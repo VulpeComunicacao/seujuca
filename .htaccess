@@ -2,43 +2,38 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 
-# /cardapio/aguasclaras -> redirect para o PDF
-RewriteRule ^cardapio/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [R=302,L]
+# ============================================================
+# CARDÁPIOS - Redirect direto para PDFs (sem cache)
+# ============================================================
 
-# /cardapio/guara1 -> redirect para o PDF
-RewriteRule ^cardapio/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [R=302,L]
+# Rotas /cardapio/* e /cardapios/* -> redirect para PDF
+RewriteRule ^cardapi?o/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [R=302,L]
+RewriteRule ^cardapi?o/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [R=302,L]
+RewriteRule ^cardapi?o/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [R=302,L]
 
-# /cardapio/guara2 -> redirect para o PDF
-RewriteRule ^cardapio/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [R=302,L]
-
-# /cardapios/aguasclaras -> redirect para o PDF
-RewriteRule ^cardapios/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [R=302,L]
-
-# /cardapios/guara1 -> redirect para o PDF
-RewriteRule ^cardapios/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [R=302,L]
-
-# /cardapios/guara2 -> redirect para o PDF
-RewriteRule ^cardapios/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [R=302,L]
-
-# Allow direct access to PDF files in cardapios
+# Acesso direto aos PDFs na pasta cardapios
 RewriteRule ^cardapios/([^/]+)/([^/]+\.pdf)$ - [L]
 
-# Old routes - redirect to update page
+# ============================================================
+# ROTAS ANTIGAS - Redirect para página de atualização
+# ============================================================
 RewriteRule ^_files/ugd/74a360_52fa72b8e66f4732b2a5f6b6b44cf4ee\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^aguas-claras$ /cardapio-em-atualizacao.html [L,R=302]
-
 RewriteRule ^_files/ugd/novo_74a360_667e87410bba43ada073e24044858076\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^guara1$ /cardapio-em-atualizacao.html [L,R=302]
-
 RewriteRule ^guara2/cardapio-seu-juca-guara2\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^guara2$ /cardapio-em-atualizacao.html [L,R=302]
 
-# Redirect unknown cardapios paths to update page
-RewriteRule ^cardapios/?$ /cardapio-em-atualizacao.html [L,R=302]
-
-# Force no-cache on all PDFs so customers always get the latest version
+# ============================================================
+# HEADERS - No-cache para PDFs
+# ============================================================
 <FilesMatch "\.pdf$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires "0"
 </FilesMatch>
+
+# ============================================================
+# SEGURANÇA - Desativar listagem de diretórios
+# ============================================================
+Options -Indexes
