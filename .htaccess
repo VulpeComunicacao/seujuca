@@ -2,23 +2,23 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 
-# /cardapio/aguasclaras -> serve o PDF diretamente
-RewriteRule ^cardapio/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [L]
+# /cardapio/aguasclaras -> redirect para o PDF
+RewriteRule ^cardapio/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [R=302,L]
 
-# /cardapio/guara1 -> serve o PDF diretamente
-RewriteRule ^cardapio/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [L]
+# /cardapio/guara1 -> redirect para o PDF
+RewriteRule ^cardapio/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [R=302,L]
 
-# /cardapio/guara2 -> serve o PDF diretamente
-RewriteRule ^cardapio/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [L]
+# /cardapio/guara2 -> redirect para o PDF
+RewriteRule ^cardapio/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [R=302,L]
 
-# /cardapios/aguasclaras -> serve o PDF diretamente
-RewriteRule ^cardapios/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [L]
+# /cardapios/aguasclaras -> redirect para o PDF
+RewriteRule ^cardapios/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [R=302,L]
 
-# /cardapios/guara1 -> serve o PDF diretamente
-RewriteRule ^cardapios/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [L]
+# /cardapios/guara1 -> redirect para o PDF
+RewriteRule ^cardapios/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [R=302,L]
 
-# /cardapios/guara2 -> serve o PDF diretamente
-RewriteRule ^cardapios/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [L]
+# /cardapios/guara2 -> redirect para o PDF
+RewriteRule ^cardapios/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [R=302,L]
 
 # Allow direct access to PDF files in cardapios
 RewriteRule ^cardapios/([^/]+)/([^/]+\.pdf)$ - [L]
