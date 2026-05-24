@@ -11,6 +11,15 @@ RewriteRule ^cardapio/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [L]
 # /cardapio/guara2 -> serve o PDF diretamente
 RewriteRule ^cardapio/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [L]
 
+# /cardapios/aguasclaras -> serve o PDF diretamente
+RewriteRule ^cardapios/aguasclaras/?$ /cardapios/aguasclaras/cardapio-aguasclaras-2026-1.pdf [L]
+
+# /cardapios/guara1 -> serve o PDF diretamente
+RewriteRule ^cardapios/guara1/?$ /cardapios/guara1/cardapio-guara1-2026-1.pdf [L]
+
+# /cardapios/guara2 -> serve o PDF diretamente
+RewriteRule ^cardapios/guara2/?$ /cardapios/guara2/cardapio-guara2-2026-1.pdf [L]
+
 # Allow direct access to PDF files in cardapios
 RewriteRule ^cardapios/([^/]+)/([^/]+\.pdf)$ - [L]
 
@@ -24,8 +33,8 @@ RewriteRule ^guara1$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^guara2/cardapio-seu-juca-guara2\.pdf$ /cardapio-em-atualizacao.html [L,R=302]
 RewriteRule ^guara2$ /cardapio-em-atualizacao.html [L,R=302]
 
-# Redirect cardapios folder browsing (but not PDF files)
-RewriteRule ^cardapios/([^/]+)/?$ /cardapio-em-atualizacao.html [L,R=302]
+# Redirect unknown cardapios paths to update page
+RewriteRule ^cardapios/?$ /cardapio-em-atualizacao.html [L,R=302]
 
 # Force no-cache on all PDFs so customers always get the latest version
 <FilesMatch "\.pdf$">
