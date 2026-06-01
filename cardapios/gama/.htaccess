@@ -1,0 +1,9 @@
+# Serve o PDF como página padrão do diretório
+DirectoryIndex cardapio-gama-2026-1.pdf
+
+# Permite acesso aos PDFs
+<FilesMatch "\.pdf$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
