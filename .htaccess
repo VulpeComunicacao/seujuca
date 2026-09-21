@@ -8,10 +8,11 @@ Redirect 302 /cardapio/guara1 /cardapios/guara1/cardapio-guara1-2026-1.pdf
 Redirect 302 /cardapio/guara2 /cardapios/guara2/cardapio-guara2-2026-1.pdf
 
 # ============================================================
-# CARDÁPIOS - Acesso direto aos PDFs
+# CARDÁPIOS - Acesso direto aos PDFs e nova página de cardápios
 # ============================================================
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteRule ^cardapio/?$ /cardapios/ [R=301,L]
     RewriteRule ^cardapios/([^/]+)/([^/]+\.pdf)$ - [L]
 </IfModule>
 
